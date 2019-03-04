@@ -2,7 +2,7 @@
 {$I una_def.inc }
 
 program
-    opusSample.dpr;
+    testSDL.dpr;
 
 {$APPTYPE CONSOLE}
 
@@ -10,13 +10,13 @@ uses
     SysUtils,
     una_types,
     una_os,
-    una_OpusAPI;
+    una_SDL_API;
 
 const
 {$IFDEF CPU64}
-    libName = 'D:\pcodecpack\bin\x64\opus.dll';
+    libName = 'D:\_my\_src\~3pt\_cpp\opus\win32\VS2015\x64\ReleaseDLL\opus.dll';
 {$ELSE}
-    libName = 'D:\pcodecpack\bin\x86\opus.dll';
+    libName = 'D:\_my\_src\~3pt\_cpp\opus\win32\VS2015\Win32\ReleaseDLL\opus.dll';
 {$ENDIF CPU64 }
 
     source_wav = '../../data/Mourning Day by SadMe.wav';

@@ -24,7 +24,7 @@ const
 {$ENDIF CPU64 }
 
     source_wav = '../../data/Mourning Day by SadMe.wav';
-    dest_enc   = '../../data/Mourning Day by SadMe.opus';
+    dest_enc   = '../../data/Mourning Day by SadMe.enc';
     dest_pcm   = '../../data/Mourning Day by SadMe.pcm';
 
 // --  --
@@ -191,4 +191,3 @@ begin
             Writeln(E.ClassName, ': ', E.Message);
     end;
 end.
-
